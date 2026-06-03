@@ -4,9 +4,6 @@ import { supabase } from '../lib/supabase'
 // ============================================================
 // IMPORT ASET GAMBAR LOKAL DARI SRC/ASSETS
 // ============================================================
-import imgMog from '../assets/mogg.jpg'
-import imgJumpa from '../assets/jumpa.png'
-import imgJatimpark from '../assets/Jatim-Park-1.webp'
 
 // ============================================================
 // DEFAULT MILESTONES (tampil jika Supabase belum dikonfigurasi
@@ -20,7 +17,7 @@ const DEFAULT_MEMORIES = [
     date: '2024-11-04', // Disesuaikan sebelum jadian di tahun 2024
     location: 'Mall MOG (Mall Olympic Garden), Malang',
     story: 'Inget banget momen canggung pas pertama kali kita tatap muka langsung di Mall MOG. Deg-degan banget waktu itu — tangan gemetar, senyum-senyum sendiri, nggak tau mau ngomong apa. Tapi begitu ketemu, semua kekakuan itu pelan-pelan mencair. Kamu dateng dengan senyum itu... dan aku langsung tau kamu beda dari yang lain. Awalnya malu-malu kucing, ternyata itu awal dari obrolan panjang kita yang nggak ada habisnya sampai sekarang. 🥹',
-    image_url: imgMog, // Menggunakan hasil import gambar MOG
+    image_url: "", // Menggunakan hasil import gambar MOG
     color: 'rose',
     emoji: '🛍️',
   },
@@ -31,7 +28,7 @@ const DEFAULT_MEMORIES = [
     date: '2024-12-08', // Disesuaikan pas dengan tanggal jadian asli kalian
     location: 'Jumpa Kopi – Jl. Terusan Sudimoro Jl. Manunggal No.16, Mojolangu, Lowokwaru, Malang',
     story: 'Tanggal 8 Desember 2024 — hari yang nggak akan pernah aku lupakan seumur hidup. Di Jumpa Kopi yang cozy itu, di antara aroma kopi dan lampu-lampu hangat, aku akhirnya punya keberanian buat nembak kamu. Dan kamu... bilang iya! 🥺 Yang bikin makin special? Itu sekaligus hari ulang tahunku. Kado terbaik yang pernah aku terima. Dari hari itu, kita resmi nulis cerita kita berdua. Makasih udah mau jadi bagian hidupku ya. 🎂💑',
-    image_url: imgJumpa, // Menggunakan hasil import gambar Jumpa Kopi
+    image_url: "", // Menggunakan hasil import gambar Jumpa Kopi
     color: 'amber',
     emoji: '☕',
   },
@@ -42,7 +39,7 @@ const DEFAULT_MEMORIES = [
     date: '2024-02-24',
     location: 'Jatim Park 1, Kota Batu, Malang',
     story: 'Siapa sangka kencan di Jatim Park 1 bakal jadi yang paling berkesan! Naik wahana bareng, jerit-jerit bareng di roller coaster sambil pegangan tangan erat-erat — kamu ketakutan tapi tetep maksa naik buat nemeni aku. Foto-foto yang kita ambil di sana masih tersimpan rapi di galeri HP-ku. Capek tapi happy banget. Saat itu aku sadar, mau semua seru itu kita ulang terus, asal bareng kamu. 🎡❤️',
-    image_url: imgJatimpark, // Menggunakan hasil import gambar Jatim Park 1
+    image_url: "", // Menggunakan hasil import gambar Jatim Park 1
     color: 'pink',
     emoji: '🎡',
   },
