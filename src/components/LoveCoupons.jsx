@@ -94,7 +94,7 @@ function SuccessModal({ coupon, onClose }) {
         </div>
         <div className="text-2xl">💌✨🎉</div>
         <button onClick={onClose} className="btn-primary w-full text-sm">
-          Siap, Makasih Bagas! ❤️
+          Siap, Makasih Mas Ia! ❤️
         </button>
       </div>
     </div>
@@ -136,11 +136,10 @@ function CouponCard({ coupon, onClaim, claimed }) {
             id={coupon.id}
             onClick={() => !claimed && onClaim(coupon)}
             disabled={claimed}
-            className={`text-xs font-bold px-4 py-2 rounded-xl transition-all duration-200 ${
-              claimed
+            className={`text-xs font-bold px-4 py-2 rounded-xl transition-all duration-200 ${claimed
                 ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                 : `btn-primary text-xs py-2 px-4`
-            }`}
+              }`}
           >
             {claimed ? 'Sudah ✓' : 'Klaim! 🎉'}
           </button>
