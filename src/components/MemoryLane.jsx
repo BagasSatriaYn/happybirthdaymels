@@ -6,7 +6,7 @@ import { supabase } from '../lib/supabase'
 // ============================================================
 import imgMog from '../assets/mogg.jpg'
 import imgJumpa from '../assets/jumpa.png'
-import imgJatimpark from '../assets/Jatim-park-1.webp'
+import imgJatimpark from '../assets/Jatim-Park-1.webp'
 
 // ============================================================
 // DEFAULT MILESTONES (tampil jika Supabase belum dikonfigurasi
@@ -221,12 +221,12 @@ function AddMemoryModal({ onClose, onAdd }) {
 
       const { data, error: sbError } = await supabase
         .from('memories')
-        .insert([{ 
-          title: form.title, 
-          date: form.date, 
-          location: form.location, 
-          story: form.story, 
-          image_url: finalImageUrl 
+        .insert([{
+          title: form.title,
+          date: form.date,
+          location: form.location,
+          story: form.story,
+          image_url: finalImageUrl
         }])
         .select()
 
